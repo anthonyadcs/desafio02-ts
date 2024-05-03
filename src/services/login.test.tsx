@@ -2,11 +2,11 @@ import { login } from "./login"
 
 describe('login', () => {
 
-    const mockAlert = jest.fn()
-    window.alert = mockAlert
+    const mockPrompt = jest.fn()
+    window.prompt = mockPrompt
 
-    it('Deve exibir um alert com boas vindas', () => {
+    it('Deve exibir um prompt com boas vindas', () => {
         login()
-        expect(mockAlert).toHaveBeenCalledWith('Bem vinda!')
+        expect(mockPrompt).toHaveBeenCalledWith('Bem vinda!')
     })
 })
