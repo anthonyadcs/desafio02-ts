@@ -27,7 +27,7 @@ export const Card = () => {
               Email
             </Text>
         </FormLabel>
-        <Input placeholder="EMAIL" />
+        <Input placeholder="EMAIL" type="email"/>
       </FormControl>
 
       <FormControl>
@@ -43,7 +43,7 @@ export const Card = () => {
               Senha
             </Text>
         </FormLabel>
-        <Input placeholder="SENHA" />
+        <Input placeholder="SENHA" type="password"/>
       </FormControl>
 
       <ButtonSub event={login}/>
